@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Horse Web</title>
+	<!-- Description, Keywords and Author -->
+	<meta name="description" content="Website About horse stalls">
+	<meta name="keywords" content="Horse,Stalls">
+	<meta name="author" content="HimanshuParashar">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Styles -->
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Animate CSS -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<!-- Font awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style-color.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600&display=swap"
+		rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/logo/logo.png">
+</head>
+
+<body>
+
+	<!-- modal for Sign In form -->
+	<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="signIn">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Sign In </h4>
+				</div>
+				<!-- form for Sign In -->
+				<form>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" placeholder="example@mail.com">
+						</div>
+						<div class="form-group">
+							<label>Contact</label>
+							<input type="text" class="form-control" placeholder="+91 55 5555 5555">
+						</div>
+
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> I accept the Terms of Service
+							</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<!-- link to payment gatway here -->
+						<button type="button" class="btn btn-success">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- wrapper -->
+	<div class="wrapper" id="home">
+
+		<!-- header area -->
+		<header>
+			<!-- primary menu -->
+			<nav class="navbar navbar-fixed-top navbar-default">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- logo area -->
+						<a class="navbar-brand" href="#homegallard">
+							<!-- logo image -->
+							<img class="img-responsive" src="img/logo/logo.png" alt="logo" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-center">
+							<li><a href="#homegallard">Home</a></li>
+							<li><a href="#latestalbum">About Us</a></li>
+							<li><a href="#productsGallery">Products</a></li>
+							<li><a href="#team">Gallery</a></li>
+							<li><a href="#eventspart">Resources</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right search">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a href="">
+										<i class="fas fa-search h4 text-body mr-3"></i>
+										<span>Search</span>
+									</a>
+								</li>
+								<li class="nav-item custom-cart">
+									<a href="#!" class="nav-link navbar-link-2 waves-effect">
+										<span class="badge badge-pill badge-danger">2</span>
+										<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+									</a>
+								</li>
+
+								<li class="nav-item pl-2 mb-2 mb-md-0 custom-cart">
+									<a href="#signIn" data-toggle="modal" type="button" class="signin">
+										Sign In</a>
+								</li>
+							</ul>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</header>
+		<!--/ header end -->
+
+		<!-- banner area -->
+		<div class="banner" id="homegallard">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/banner/b6.jpg" alt="...">
+						<div class="container">
+							<!-- banner caption -->
+							<div class="carousel-caption slide-one">
+								<!-- heading -->
+								<h2 class="animated fadeInLeftBig"><i class="fa fa-music"></i> Classic Show Series</h2>
+								<!-- paragraph -->
+								<h3 class="animated fadeInRightBig">Portable Horse Stalls</h3>
+								<p class="animated pulse red">First stall starting under $1800</p>
+								<!-- button -->
+								<a href="#" class="animated fadeIn btn btn-theme">Get a Quote</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/banner/b6.jpg" alt="...">
+						<div class="container">
+							<!-- banner caption -->
+							<div class="carousel-caption slide-two">
+								<!-- heading -->
+								<h2 class="animated fadeInLeftBig"><i class="fa fa-headphones"></i> Listen It...</h2>
+								<!-- paragraph -->
+								<h3 class="animated fadeInRightBig">Portable Horse Stalls</h3>
+								<p class="animated pulse red">First stall starting under $1800</p>
+								<!-- button -->
+								<a href="#" class="animated fadeIn btn btn-theme">Get a Quote</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/banner/b6.jpg" alt="...">
+						<div class="container">
+							<!-- banner caption -->
+							<div class="carousel-caption slide-one">
+								<!-- heading -->
+								<h2 class="animated fadeInLeftBig"><i class="fa fa-music"></i> Classic Show Series</h2>
+								<!-- paragraph -->
+								<h3 class="animated fadeInRightBig">Portable Horse Stalls</h3>
+								<p class="animated pulse red">First stall starting under $1800</p>
+								<!-- button -->
+								<a href="#" class="animated fadeIn btn btn-theme">Get a Quote</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="fa fa-arrow-left" aria-hidden="true"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="fa fa-arrow-right" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>
+		<!--/ banner end -->
+
+		<!-- block for animate navigation menu -->
+		<div class="nav-animate"></div>
+
+		<!-- Hero block area -->
+		<div id="latestalbum">
+			<div class="container">
+				<!-- hero content -->
+				<div class="hero-playlist">
+					<div class="row">
+						<div class="col-md-9 col-sm-6">
+							<!-- album details -->
+							<div class="album-details">
+								<!-- title -->
+								<h4>Lorem Ipsum has been</h4>
+								<!-- composed by -->
+								<h5>By Himanshu</h5>
+								<!-- paragraph -->
+								<p>Lorem Ipsum has been the industry's standard dummy text ever since 1500.</p>
+								<!-- button -->
+								<a href="#" class="btn btn-lg btn-theme">Learn More</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- banner area -->
+							<div class="banner mt-5">
+								<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+									<!-- Indicators -->
+									<ol class="carousel-indicators part">
+										<li data-target="#carousel-example-generic1" data-slide-to="0" class="active">
+										</li>
+										<li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+										<li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+									</ol>
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/banner/b6.jpg" alt="...">
+
+										</div>
+										<div class="item">
+											<img src="img/banner/b6.jpg" alt="...">
+
+										</div>
+										<div class="item">
+											<img src="img/banner/b6.jpg" alt="...">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--/ banner end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ hero end -->
+
+		<!-- Product -->
+		<div class="banner-part" id="productsGallery">
+			<div class="container-fluid mt-4 mb-5">
+				<h3 class="text-center">Product Categories</h3>
+				<div class="row mt-30">
+					<div class="col-md-3 col-sm-6">
+						<div class="hero-activities">
+							<img src="img/banner/11.jpg" alt="">
+							<div class="box-content">
+								<h5 class="title text-center redo">Aashu</h5>
+								<ul class="icon text-center">
+									<a href="#" class="btn  btn-theme">Explore more</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="hero-activities">
+							<img src="img/banner/12.jpg" alt="">
+							<div class="box-content">
+								<h5 class="title text-center redo">Aashu</h5>
+								<ul class="icon text-center">
+									<a href="#" class="btn  btn-theme">Explore more</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="hero-activities">
+							<img src="img/banner/13.jpg" alt="">
+							<div class="box-content">
+								<h5 class="title text-center redo">Aashu</h5>
+								<ul class="icon text-center">
+									<a href="#" class="btn  btn-theme">Explore more</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="hero-activities">
+							<img src="img/banner/14.jpg" alt="">
+							<div class="box-content">
+								<h5 class="title text-center redo">Aashu</h5>
+								<ul class="icon text-center">
+									<a href="#" class="btn  btn-theme">Explore more</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Product -->
+
+		<!-- promo -->
+		<!-- featured abbum -->
+		<div class="">
+			<div class="container">
+				<!-- default heading -->
+				<h3 class="text-center">Our Esteemed Partners</h3>
+				<!-- featured album elements -->
+				<div class="featured-element">
+					<div class="row">
+
+						<div class="col-md-3 col-sm-6 align-self-center">
+							<div class="figure">
+								<!-- image -->
+								<img class="img-responsive" src="img/banner/promote3.png" alt="" />
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 align-self-center">
+							<div class="figure">
+								<!-- image -->
+								<img class="img-responsive" src="img/banner/promote.png" alt="" />
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 align-self-center">
+							<div class="figure">
+								<!-- image -->
+								<img class="img-responsive" src="img/banner/promote3.png" alt="" />
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 align-self-center">
+							<div class="figure">
+								<!-- image -->
+								<img class="img-responsive" src="img/banner/promote.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- features end -->
+
+		<!-- Recent Activities -->
+		<section id="team" class="pb-5">
+			<div class="container">
+				<h3 class="section-title h1">Recent Acitivities</h3>
+				<div class="row">
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body">
+											<p><img class=" img-fluid" src="img/promo/ra.jpg" alt="card image"></p>
+
+											<h4 class="card-text">Portable Stalls - American Stalls</h4>
+											<h5>By <span>American Stalls</span></h5>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body pl-4 mt-4">
+											<h4 class="card-title">Portable Horse Stalls</h4>
+											<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing
+												elit. Ipsa voluptas sit impedit qui minima ipsam accusantium a soluta
+												numquam illum veniam similique sint doloribus, dolorem debitis ab
+												repellendus quisquam officiis.</p>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body">
+											<p><img class=" img-fluid" src="img/promo/ra1.jpg" alt="card image"></p>
+
+											<h4 class="card-text">Portable Stalls - American Stalls</h4>
+											<h5>By <span>American Stalls</span></h5>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body pl-4 mt-4">
+											<h4 class="card-title">Portable Horse Stalls</h4>
+											<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing
+												elit. Ipsa voluptas sit impedit qui minima ipsam accusantium a soluta
+												numquam illum veniam similique sint doloribus, dolorem debitis ab
+												repellendus quisquam officiis.</p>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Team member -->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+							<div class="mainflip">
+								<div class="frontside">
+									<div class="card">
+										<div class="card-body">
+											<p><img class=" img-fluid" src="img/promo/ra2.jpg" alt="card image"></p>
+
+											<h4 class="card-text">Portable Stalls - American Stalls</h4>
+											<h5>By <span>American Stalls</span></h5>
+										</div>
+									</div>
+								</div>
+								<div class="backside">
+									<div class="card">
+										<div class="card-body pl-4 mt-4">
+											<h4 class="card-title">Portable Horse Stalls</h4>
+											<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing
+												elit. Ipsa voluptas sit impedit qui minima ipsam accusantium a soluta
+												numquam illum veniam similique sint doloribus, dolorem debitis ab
+												repellendus quisquam officiis.</p>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- button -->
+				<div class="text-center buts">
+					<a href="#" class="btn btn-lg btn-theme">View all Activities</a>
+				</div>
+			</div>
+		</section>
+		<!-- Recent Activities End -->
+
+
+		<div class="promo parallax-one pad" id="eventspart">
+			<div class="container">
+				<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators custom-indicators">
+						<li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic2" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<!-- promo element -->
+							<div class="promo-element ">
+								<!-- heading -->
+								<h3>Our clients love us !</h3>
+								<h2>Customer satisfaction is our first priority. See what our clients are saying!</h2>
+								<!-- paragraph -->
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga id dicta deleniti
+									animi natus, officiis ratione suscipit assumenda consectetur quia? Adipisci quaerat
+									nam explicabo corporis quisquam quibusdam ipsa molestias molestiae.</p>
+								<!-- link -->
+								<div class="d-flex1">
+									<div class="d-flex2">
+										<a class="promo-link" href="#">
+											<img src="img/logo/user.png" alt="">
+										</a>
+									</div>
+									<div class="d-flex3">
+										<h4>Conor Mcgreger</h4>
+										<p>Forever Green Farm</p>
+									</div>
+								</div>
+
+
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<!-- promo element -->
+							<div class="promo-element ">
+								<!-- heading -->
+								<h3>Our clients love us !</h3>
+								<h2>Customer satisfaction is our first priority. See what our clients are saying!</h2>
+								<!-- paragraph -->
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga id dicta deleniti
+									animi natus, officiis ratione suscipit assumenda consectetur quia? Adipisci quaerat
+									nam explicabo corporis quisquam quibusdam ipsa molestias molestiae.</p>
+								<!-- link -->
+								<div class="d-flex1">
+									<div class="d-flex2">
+										<a class="promo-link" href="#">
+											<img src="img/logo/user.png" alt="">
+										</a>
+									</div>
+									<div class="d-flex3">
+										<h4>Conor Mcgreger</h4>
+										<p>Forever Green Farm</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="item">
+							<!-- promo element -->
+							<div class="promo-element ">
+								<!-- heading -->
+								<h3>Our clients love us !</h3>
+								<h2>Customer satisfaction is our first priority. See what our clients are saying!</h2>
+								<!-- paragraph -->
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga id dicta deleniti
+									animi natus, officiis ratione suscipit assumenda consectetur quia? Adipisci quaerat
+									nam explicabo corporis quisquam quibusdam ipsa molestias molestiae.</p>
+								<!-- link -->
+								<div class="d-flex1">
+									<div class="d-flex2">
+										<a class="promo-link" href="#">
+											<img src="img/logo/user.png" alt="">
+										</a>
+									</div>
+									<div class="d-flex3">
+										<h4>Conor Mcgreger</h4>
+										<p>Forever Green Farm</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- button -->
+				<div class="text-center buts">
+					<a href="#" class="btn btn-lg btn-theme">View all Testimonials</a>
+				</div>
+
+			</div>
+		</div>
+		<!--/ promo end -->
+
+		<!-- news letter -->
+		<div class="news-letter" id="blog">
+			<div class="container">
+				<!-- news letter inner content -->
+				<div class="news-content ">
+					<!-- heading -->
+					<h3>Stay in the Know !</h3>
+					<!-- paragraph -->
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quae debitis perferendis,
+						recusandae eos, dolorem qui maxime asperiores earum consequatur voluptatem eaque necessitatibus
+						ullam fugiat cupiditate, magni commodi totam harum.</p>
+					<!-- subscribe form -->
+					<form>
+						<div class="input-group">
+							<input type="text" class="form-control input-lg" placeholder="Email">
+						</div><!-- /input-group -->
+						<!-- button -->
+						<div class="text-center buts">
+							<a href="#" class="btn btn-lg btn-theme">Subscribe !</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- news letter end -->
+
+
+
+
+
+		<!-- footer -->
+		<footer id="contact">
+			<div class="container">
+
+				<!-- Logo -->
+				<div class="footer_logo">
+					<img class="img-responsive" src="img/logo/footer_logo.png" alt="logo">
+				</div>
+				<!-- Bottom List -->
+				<div class="row">
+					<div class="col-sm-2 col-md-2 col">
+						<ul>
+							<li>
+								<a href="#" class="text-body font-weight-normal">About Us</a>
+							</li>
+							<li>
+								<a href="#" class="text-body font-weight-normal">Portable Horse Stalls</a>
+							</li>
+							<li>
+								<a href="#" class="text-body font-weight-normal">Stall Gates</a>
+							</li>
+							<li>
+								<a href="#" class="text-body font-weight-normal">Equine Flooring</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-2 col-md-2 col">
+						<ul>
+							<li>
+								<a href="#">Permanent Horse Stalls</a>
+							</li>
+							<li>
+								<a href="#">Testimonials</a>
+							</li>
+							<li>
+								<a href="#">Resources</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-2 col-md-2 col">
+						<ul>
+							<li>
+								<a href="#">FAQs</a>
+							</li>
+							<li>
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#">Site Map</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-2 col-md-2 col">
+						<ul>
+							<li>
+								<a href="#">My Account </a>
+							</li>
+							<li>
+								<a href="#">Checkout</a>
+							</li>
+							<li>
+								<a href="#">Cart</a>
+							</li>
+							<li>
+								<a href="#">Sign Out</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4 col-md-4 col">
+						<ul>
+							<li>
+								<a href="#">
+									<p><i class="fa fa-location-arrow fa-2x pr-2"></i><span> 9878/25 sec 9 rohini 35
+										</span> </p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p><i class="fa fa-phone fa-2x pr-2"></i> <span> +91-987654321 </span></p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p><i class="fa fa fa-envelope fa-2x pr-2"></i><span> info@example.com </span></p>
+								</a>
+							</li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<!-- button -->
+				<div class="text-center buts-part black">
+					<a href="#" class="btn btn-lg btn-theme black">Download our Catalogue</a>
+				</div>
+				<!-- social media links -->
+				<div class="social">
+					<a class="h-facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="h-google" href="#"><i class="fa fa-google-plus"></i></a>
+					<a class="h-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+					<a class="h-twitter" href="#"><i class="fa fa-twitter"></i></a>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="container">
+					<!-- copy right -->
+					<div class="copy-right">
+						<div class="float-left">
+							<p>&copy; copyright 2019 All rights reserved by <b>AMERICAN STALLS</b></p>
+						</div>
+						<div class="float-right">
+							<p>Designed with passion by: <b>Aashu</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</div>
+	</footer>
+	<!-- footer end -->
+
+	</div>
+
+	<!-- Javascript files -->
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- WayPoints JS -->
+	<script src="js/waypoints.min.js"></script>
+	<!-- Custom JS -->
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
